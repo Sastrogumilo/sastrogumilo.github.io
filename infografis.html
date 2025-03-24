@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@@page-discription">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Infografis Peta Pick-Up Point di UGM</title>
+    <!-- StyleSheets  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='https://cdn.plot.ly/plotly-3.0.1.min.js'></script>
+    <link rel="stylesheet" href="https://puskesmas-kagok.whf.bz/assets/css/dashlite.css?ver=3.1.0">
+    
+    <link id="skin-default" rel="stylesheet" href="https://puskesmas-kagok.whf.bz/assets/css/theme.css?ver=3.1.0">
+    <link rel="stylesheet" href="https://puskesmas-kagok.whf.bz/css/index.css?ver=000006">
+
+    <script src="https://puskesmas-kagok.whf.bz/assets/js/bundle.js?ver=3.1.0&ver2=000001"></script>
+    <script src="https://puskesmas-kagok.whf.bz/assets/js/scripts.js?ver=3.1.0&ver2=000001"></script>
+
+
+
+    <!-- <link rel="stylesheet" href="./html/covid/assets/css/dashlite.css?ver=3.1.0"> -->
+    <!-- <link id="skin-default" rel="stylesheet" href="./html/covid/assets/css/theme.css?ver=3.1.0"> -->
+    <!-- <link rel="stylesheet" href="//puskesmas-kagok.whf.bz/covid/assets/css/dashlite.css?ver=3.1.0"></link> -->
+    <link id="skin-default" rel="stylesheet" href="//puskesmas-kagok.whf.bz/covid/assets/css/theme.css?ver=3.1.1"></link>
+
+
+    <!-- <script src="./html/covid/assets/js/bundle.js?ver=3.1.0"></script> -->
+    <!-- <script src="./html/covid/assets/js/scripts.js?ver=3.1.0"></script> -->
+    <!-- <script src="./html/covid/assets/js/libs/jqvmap.js?ver=3.1.0"></script> -->
+    <!-- <script src="./html/covid/assets/js/chart-covid.js?ver=3.1.0"></script> -->
+
+    <script src="//puskesmas-kagok.whf.bz/covid/assets/js/bundle.js"></script>
+    <script src="//puskesmas-kagok.whf.bz/covid/assets/js/scripts.js"></script>
+    <script src="//puskesmas-kagok.whf.bz/covid/assets/js/libs/jqvmap.js"></script>
+    <script src="//puskesmas-kagok.whf.bz/covid/assets/js/chart-covid.js"></script>
+    
+
+    <!-- <script src="./html/js/infographic.js"></script> -->
+    <!-- <link rel="stylesheet" href="./html/css/infographic.css"> -->
+
+    <script src="//puskesmas-kagok.whf.bz/js/infographic.js?ver=00001"></script>
+    <link rel="stylesheet" href="//puskesmas-kagok.whf.bz/css/infographic.css?ver=00001">
+
+    
+</head>
+
+<body class="nk-body npc-covid has-sidebar has-sidebar-short ui-clean ui-rounder">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- sidebar @s -->
+            
+                <div class="header-main header-main-s1 is-sticky is-transparent on-light">
+                    <div class="container header-container">
+                        <div class="header-wrap">
+                            <div class="header-logo">
+                                <a href="/" class="logo-link">
+                                    <img class="logo-dark logo-img" style="filter: brightness(100%) invert(100%) grayscale(100%);" src="https://simpan.ugm.ac.id/s/UutuDmaDOpmcmku/download?path=%2F&files=Logo%20Horizontal%20Stack-Up.png"  alt="logo">
+                                    <img class="logo-dark logo-img" src="https://simpan.ugm.ac.id/s/UutuDmaDOpmcmku/download?path=%2F&files=Logo%20Horizontal%20Stack-Up.png" alt="logo-dark">
+                                </a>
+                            </div>
+                            <div class="header-toggle">
+                                <button class="menu-toggler" data-target="mainNav">
+                                    <em class="menu-on icon ni ni-menu"></em>
+                                    <em class="menu-off icon ni ni-cross"></em>
+                                </button>
+                            </div><!-- .header-nav-toggle -->
+                            <nav class="header-menu" data-content="mainNav">
+                                <ul class="menu-list ms-lg-auto">
+                                    
+                                    <li class="menu-item"><a href="./html/index.html" class="menu-link nav-link">Home</a></li>
+                                    <li class="menu-item"><a href="./html/faqs.html" class="menu-link nav-link">FAQs</a></li>
+                                    <li class="menu-item"><a href="#package" class="menu-link nav-link">Packages</a></li>
+                                    <li class="menu-item"><a href="#team" class="menu-link nav-link">Team</a></li>
+                                    <li class="menu-item"><a href="#reviews" class="menu-link nav-link">About Us</a></li>
+                                </ul>
+                                <ul class="header-action btns-inline">  
+                                    <center>
+                                        <div class="switch">
+                                            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" onclick="changeLanguage()">
+                                            <label for="language-toggle"></label>
+                                            <span class="on">ID</span>
+                                            <span class="off">EN</span>
+                                          </div>
+                                     </center>
+                                </ul>
+                            </nav><!-- .nk-nav-menu -->
+                        </div><!-- .header-warp-->
+                    </div><!-- .container-->
+                </div><!-- .header-main-->
+                
+                
+           
+            <!-- sidebar @e -->
+            <!-- wrap @s -->
+            <div class="nk-wrap">
+                <!-- content @s -->
+                <div class="nk-content" style="padding-top: 16vh;">
+                    <div class="container-fluid">
+                        <div class="nk-content-body">
+                            <div class="nk-block-head nk-block-head-sm">
+                                <div class="nk-block-between flex-wrap g-1 align-start">
+                                    <div class="nk-block-head-content">
+                                        <h5 class="nk-block-title" id="__info_title">Titik Lokasi Pengambilan Sampah di UGM</h5>
+                                        <p id="__info_sub">Berikut Beberapa Titik Pengambilan Sampah di UGM</p>
+                                    </div>
+                                    <div class="nk-block-head-content">
+                                        <p class="note-text">Updated: March 27, 2020 12:30 (GMT +6)</p>
+                                    </div>
+                                </div>
+                            </div><!-- .nk-block-head -->
+                            <div class="nk-block">
+                                <div class="row g-gs">
+                                    <div class="col-xl-8">
+                                        <div class="card card-bordered nk-cov-wg8">
+                                            <div class="card-inner">
+                                                <div class="nk-cov-wg8-group g-3">
+                                                    <div class="nk-cov-wg8-map" id="__map">
+                                                        
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div><!-- .card-inner -->
+                                            <div class="card-inner border-top">
+                                                <div class="card-title-group">
+                                                    <div class="card-title">
+                                                        <!-- <h6 class="title align-center"><span class="me-2">Statistics</span> <em class="icon ni ni-info text-primary fs-14px" data-bs-toggle="tooltip" title="tolltip"></em></h6> -->
+                                                    </div>
+                                                    <div class="card-tools">
+                                                        <ul class="card-tools-nav">
+                                                           
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .card-inner -->
+                                            <div class="col-xl-12">
+                                                <div class="card card-bordered card-full">
+                                                    <div class="card-inner">
+                                                        <div class="card-title-group mb-4">
+                                                            <div class="card-title">
+                                                                <h6 class="title" id="__bar_chart_fak_title" >Grafik Sampah per Titik Pengambilan</h6>
+                                                                <p id="__bar_chart_fak_sub">Bagan pengambilan sampah untuk tiap unit kerja / fakultas</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id='__chart_fakultas'></div>
+                                                        <div class="nk-cov-wg7">
+                                                            <div class="nk-cov-wg7-list gy-1">
+                                                                
+                                                                
+                                                            </div><!-- .nk-cov-wg7-list -->
+                                                        </div><!-- .nk-cov-wg7 -->
+                                                    </div><!-- .card-inner -->
+                                                </div><!-- .card -->
+                                            </div><!-- .col -->
+                                            
+                                            <!-- <div class="card-inner p-0 border-top nk-cov-wg8-table-wrap">
+                                                <table class="nk-tb-list nk-tb-covid nk-tb-countries is-medium">
+                                                    <thead>
+                                                        <tr class="nk-tb-item nk-tb-head">
+                                                            <th class="nk-tb-col nk-tb-col-country cov-sortable"><span>Fakultas</span></th>
+                                                            <th class="nk-tb-col nk-tb-col-infect cov-sortable sort-down"><span>Organik</span></th>
+                                                            <th class="nk-tb-col nk-tb-col-infect-hr cov-sortable"><span>Recycle</span></th>
+                                                            <th class="nk-tb-col nk-tb-col-death cov-sortable"><span>Residu</span></th>
+                                                            <th class="nk-tb-col nk-tb-col-recover cov-sortable"><span>Spesific</span></th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                                <div class="nk-cov-table-pro" data-simplebar>
+                                                    <table class="nk-tb-list nk-tb-covid nk-tb-countries cov-datatable is-medium">
+                                                        <thead>
+                                                            <tr class="nk-tb-item nk-tb-head">
+                                                                <th class="nk-tb-col nk-tb-col-country cov-sortable"><span>Fakultas</span></th>
+                                                                <th class="nk-tb-col nk-tb-col-infect cov-sortable sort-down"><span>Organik</span></th>
+                                                                <th class="nk-tb-col nk-tb-col-infect-hr cov-sortable"><span>Recycle</span></th>
+                                                                <th class="nk-tb-col nk-tb-col-death cov-sortable"><span>Residu</span></th>
+                                                                <th class="nk-tb-col nk-tb-col-recover cov-sortable"><span>Spesific</span></th>
+                                                            </tr>
+                                                        </thead>
+                                                       
+                                                    </table>
+                                                </div>
+                                            </div> -->
+                                            
+                                        </div><!-- .card -->
+                                        
+                                    </div><!-- .col -->
+                                    <div class="col-xl-4">
+                                        <div class="row g-gs">
+                                            <div class="col-xl-12 col-lg-6">
+                                                <div class="card card-bordered card-full">
+                                                    <div class="card-inner">
+                                                        <div class="card-title-group mb-1">
+                                                            <div class="card-title">
+                                                                <h6 class="title" id="__chart_title_1">Sampah Organik</h6>
+                                                                <p id="__chart_sub_1">Grafik pengambilan sampah organik per bulan</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-cov-wg6">
+                                                            <img src="https://puskesmas-kagok.whf.bz/images/info/sampah-organik.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-6">
+                                                <div class="card card-bordered card-full">
+                                                    <div class="card-inner">
+                                                        <div class="card-title-group mb-4">
+                                                            <div class="card-title">
+                                                                <h6 class="title" id="__chart_title_2">Sampah Residu</h6>
+                                                                <p id="__chart_sub_2">Grafik pengambilan sampah residu per bulan.</p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="nk-cov-wg6">
+                                                            <img src="https://puskesmas-kagok.whf.bz/images/info/sampah-residu.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-12 col-lg-6">
+                                                <div class="card card-bordered card-full">
+                                                    <div class="card-inner">
+                                                        <div class="card-title-group mb-4">
+                                                            <div class="card-title">
+                                                                <h6 class="title" id="__chart_title_3">Sampah Recycle</h6>
+                                                                <p id="__chart_sub_3">Grafik pengambilan sampah recycle per bulan</p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="nk-cov-wg6">
+                                                            <img src="https://puskesmas-kagok.whf.bz/images/info/sampah-recycle.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xl-12 col-lg-6">
+                                                <div class="card card-bordered card-full">
+                                                    <div class="card-inner">
+                                                        <div class="card-title-group mb-4">
+                                                            <div class="card-title">
+                                                                <h6 class="title" id="__chart_title_4">Sampah Spesifik</h6>
+                                                                <p id="__chart_sub_4">Grafik pengambilan sampah spesifik per bulan</p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="nk-cov-wg6">
+                                                            <img src="https://puskesmas-kagok.whf.bz/images/info/sampah-spesifik.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div><!-- .row -->
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div><!-- .nk-block -->
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+                <!-- footer @s -->
+                <div class="nk-footer d-md-none">
+                    <div class="container-fluid">
+                        <div class="nk-footer-wrap gy-1 gx-4">
+                            <div class="nk-footer-links">
+                                <ul class="nav nav-sm">
+                                    <!-- <li class="nav-item"><a class="nav-link" href="#covid-feedback" data-bs-toggle="modal">Feedback</a></li> -->
+                                    <!-- <li class="nav-item"><a class="nav-link" href="#covid-about" data-bs-toggle="modal">About Data</a></li> -->
+                                </ul>
+                            </div>
+                            <div class="nk-footer-copyright"> Kelompok Latsar 1 &copy; Est 2025, <a href="https://softnio.com" target="_blank">Softnio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- Modal About -->
+   
+    
+   
+   
+ 
+</body>
+
+</html>

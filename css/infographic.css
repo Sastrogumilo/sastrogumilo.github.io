@@ -1,0 +1,180 @@
+#map {
+    position: relative;
+}
+
+#__map [id^="bin_"] {
+    position: absolute;
+    font-size: 24px;
+    /* Ensure consistent size */
+}
+
+@media (max-width: 768px) {
+
+    /* Hides bins on screens smaller than 768px (mobile devices) */
+    #__map [id^="bin_"] {
+        display: none;
+    }
+}
+
+#__map #bin_1 {
+    position: absolute;
+    /* left: 46%;
+    top: 38%; previous value */
+    left: 47%;
+    top: 22%;
+}
+
+#__map #bin_2 {
+    left: 56%;
+    top: 19%;
+}
+
+#__map #bin_3 {
+    left: 61%;
+    top: 24%;
+}
+
+#__map #bin_4 {
+    left: 54%;
+    top: 23%;
+}
+
+#__map #bin_5 {
+    left: 85%;
+    top: 23%;
+}
+
+#__map #bin_6 {
+    left: 76%;
+    top: 20%;
+}
+
+#__map #bin_7 {
+    left: 59%;
+    top: 28%;
+}
+
+#__map #bin_8 {
+    left: 57%;
+    top: 32%;
+}
+
+#__map #bin_9 {
+    left: 55%;
+    top: 35%;
+}
+
+#__map #bin_10 {
+    left: 50%;
+    top: 30%;
+}
+
+#__map #bin_11 {
+    left: 49%;
+    top: 34%;
+}
+
+#__map #bin_12 {
+    left: 44%;
+    top: 28%;
+}
+
+#__map #bin_13 {
+    left: 46%;
+    top: 25%;
+}
+
+#__map #bin_14 {
+    left: 52%;
+    top: 27%;
+}
+
+#__map #bin_15 {
+    left: 43%;
+    top: 15%;
+}
+
+#__map #bin_16 {
+    left: 40%;
+    top: 20%;
+}
+
+#__map #bin_17 {
+    left: 36%;
+    top: 14%;
+}
+
+#__map #bin_18 {
+    left: 41%;
+    top: 10%;
+}
+
+#__map #bin_19 {
+    left: 33%;
+    top: 8%;
+}
+
+#__map #bin_20 {
+    left: 17%;
+    top: 13%;
+}
+
+#__map #bin_21 {
+    left: 28%;
+    top: 23%;
+}
+
+#__map #bin_22 {
+    left: 36%;
+    top: 25%;
+}
+
+#__map #bin_23 {
+    left: 33%;
+    top: 32%;
+}
+
+#__map #bin_24 {
+    left: 26%;
+    top: 31%;
+}
+
+#__map #bin_25 {
+    left: 23%;
+    top: 43%;
+}
+
+#__map #bin_26 {
+    left: 25%;
+    top: 47%;
+}
+
+#__map #bin_27 {
+    left: 85%;
+    top: 29%;
+}
+
+#__map #bin_28 {
+    left: 52%;
+    top: 42%;
+}
+
+#__map #bin_29 {
+    left: 56%;
+    top: 44%;
+}
+
+#__map #bin_30 {
+    left: 53%;
+    top: 48%;
+}
+
+#__map #bin_31 {
+    left: 66%;
+    top: 23%;
+}
+
+#__map #bin_32 {
+    left: 63%;
+    top: 44%;
+}

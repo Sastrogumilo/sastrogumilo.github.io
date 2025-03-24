@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+  <head>
+    <base href="../" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Softnio" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers."
+    />
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <!-- Page Title  -->
+    <title>Latsar Kelompok 1</title>
+    <!-- StyleSheets  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- <link
+      rel="stylesheet"
+      href="//puskesmas-kagok.whf.bz/assets/css/dashlite.css?ver=3.1.0&ver2=000001"
+    /> -->
+    <!-- <link
+      id="skin-default"
+      rel="stylesheet"
+      href="//puskesmas-kagok.whf.bz/assets/css/theme.css?ver=3.1.0&ver2=000001"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://puskesmas-kagok.whf.bz/assets/css/dashlite.css?ver=3.1.0"
+      ,
+      type="text/css"
+    />
+    <link
+      id="skin-default"
+      rel="stylesheet"
+      href="https://puskesmas-kagok.whf.bz/assets/css/theme.css?ver=3.1.0"
+      ,
+      type="text/css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <script
+      type="text/javascript"
+      src="//puskesmas-kagok.whf.bz/js/index.js?ver=000007"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="//puskesmas-kagok.whf.bz/css/index.css?ver=000007"
+    /> -->
+
+    <script
+      type="text/javascript"
+      src="https://puskesmas-kagok.whf.bz/js/index.js?ver=000006"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://puskesmas-kagok.whf.bz/css/index.css?ver=000006"
+    />
+    <!-- <link rel="stylesheet" href="./html/css/index.css" type="text/css" /> -->
+
+    <!-- <script src="//puskesmas-kagok.whf.bz/assets/js/bundle.js?ver=3.1.0&ver2=000001"></script>
+    <script src="//puskesmas-kagok.whf.bz/assets/js/scripts.js?ver=3.1.0&ver2=000001"></script> -->
+
+    <script src="https://puskesmas-kagok.whf.bz/assets/js/bundle.js?ver=3.1.0&ver2=000001"></script>
+    <script src="https://puskesmas-kagok.whf.bz/assets/js/scripts.js?ver=3.1.0&ver2=000001"></script>
+  </head>
+
+  <body class="nk-body bg-white npc-landing">
+    <div class="nk-app-root">
+      <!-- main @s -->
+      <div class="nk-main">
+        <header class="header has-header-main-s1 bg-dark" id="home">
+          <div
+            class="header-main header-main-s1 is-sticky is-transparent on-dark"
+          >
+            <div class="container header-container">
+              <div class="header-wrap">
+                <div class="header-logo">
+                  <a href="/" class="logo-link">
+                    <img
+                      class="logo-light logo-img"
+                      style="
+                        filter: brightness(100%) invert(100%) grayscale(100%);
+                      "
+                      src="https://simpan.ugm.ac.id/s/UutuDmaDOpmcmku/download?path=%2F&files=Logo%20Horizontal%20Stack-Up.png"
+                      alt="logo"
+                    />
+                    <img
+                      class="logo-dark logo-img"
+                      src="https://simpan.ugm.ac.id/s/UutuDmaDOpmcmku/download?path=%2F&files=Logo%20Horizontal%20Stack-Up.png"
+                      alt="logo-dark"
+                    />
+                  </a>
+                </div>
+                <div class="header-toggle">
+                  <button class="menu-toggler" data-target="mainNav">
+                    <em class="menu-on icon ni ni-menu"></em>
+                    <em class="menu-off icon ni ni-cross"></em>
+                  </button>
+                </div>
+                <!-- .header-nav-toggle -->
+                <nav class="header-menu" data-content="mainNav">
+                  <ul class="menu-list ms-lg-auto">
+                    <li class="menu-item">
+                      <a href="./html/index.html" class="menu-link nav-link"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="./html/faqs.html" class="menu-link nav-link"
+                        >FAQs</a
+                      >
+                    </li>
+                    <li class="menu-item">
+                      <a href="#package" class="menu-link nav-link">Packages</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#team" class="menu-link nav-link">Team</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#reviews" class="menu-link nav-link">About Us</a>
+                    </li>
+                  </ul>
+                  <ul class="header-action btns-inline">
+                    <center>
+                      <div class="switch">
+                        <input
+                          id="language-toggle"
+                          class="check-toggle check-toggle-round-flat"
+                          type="checkbox"
+                          onclick="changeLanguage()"
+                        />
+                        <label for="language-toggle"></label>
+                        <span class="on">ID</span>
+                        <span class="off">EN</span>
+                      </div>
+                    </center>
+                  </ul>
+                </nav>
+                <!-- .nk-nav-menu -->
+              </div>
+              <!-- .header-warp-->
+            </div>
+            <!-- .container-->
+          </div>
+          <!-- .header-main-->
+          <div class="header-content my-auto py-6 is-dark">
+            <div class="container mt-n4 mt-lg-0">
+              <div
+                class="row flex-lg-row-reverse align-items-center justify-content-between g-gs"
+              >
+                <div class="col-lg-6 mb-lg-0">
+                  <div class="header-play text-lg-center">
+                    <!-- <a
+                      class="play popup-video"
+                      href="https://www.youtube.com/watch?v=nrANKUUHBf0"
+                    > -->
+                    <a
+                      class="play popup-video"
+                      href="https://drive.google.com/file/d/12GHu_NAzem0kz75Bm6PJtMwN7Jjt8ruI/preview"
+                    >
+                      <div
+                        class="styled-icon styled-icon-6x styled-icon-s5 text-warning"
+                      >
+                        <svg
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 512 512"
+                          style="fill: currentColor"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M436.2,178.3c-7.5-4.7-17.4-2.4-22.1,5.1c-4.7,7.5-2.4,17.4,5.1,22.1c17.5,10.9,28,29.8,28,50.4s-10.5,39.5-28,50.4
+	L155.7,470.7c-18.6,11.6-41.1,12.2-60.3,1.5c-19.2-10.6-30.6-30.1-30.6-52V91.7c0-21.9,11.4-41.3,30.6-52
+	c19.1-10.6,41.7-10.1,60.3,1.5l153.4,95.6c7.5,4.7,17.4,2.4,22.1-5.1c4.7-7.5,2.4-17.4-5.1-22.1L172.7,14
+	c-28.6-17.9-63.3-18.7-92.9-2.4C50.3,28.1,32.7,58,32.7,91.7v328.6c0,33.7,17.6,63.7,47.1,80c14.1,7.8,29.3,11.7,44.5,11.7
+	c16.7,0,33.4-4.7,48.4-14l263.5-164.3c27-16.8,43.1-45.9,43.1-77.7S463.2,195.2,436.2,178.3z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="play-text">2:58 minutes</div>
+                    </a>
+                  </div>
+                </div>
+                <!-- .col- -->
+                <div class="col-lg-6 col-md-10">
+                  <div class="header-caption">
+                    <!-- <div class="header-rating rating">
+                                        <ul class="rating-stars">
+                                            <li><em class="icon ni ni-star-fill"></em></li>
+                                            <li><em class="icon ni ni-star-fill"></em></li>
+                                            <li><em class="icon ni ni-star-fill"></em></li>
+                                            <li><em class="icon ni ni-star-fill"></em></li>
+                                            <li><em class="icon ni ni-star-fill"></em></li>
+                                        </ul>
+                                        <div class="rating-text">14,252 reviews</div>
+                                    </div> -->
+                    <h1 class="header-title fw-medium" id="__header_main">
+                      Mulai dari Kita: Pilah Sampah untuk Masa Depan
+                    </h1>
+                    <div class="header-text" id="__header_sub">
+                      <p>
+                        Pelajari cara mudah memilah sampah dengan benar dan
+                        berkontribusi untuk lingkungan yang lebih bersih dan
+                        sehat.
+                      </p>
+                    </div>
+                    <ul class="header-action btns-inline">
+                      <li>
+                        <a href="#" class="btn btn-primary btn-lg btn-round"
+                          ><span id="__header_btn"
+                            >Pelajari Cara Memilah Sampah!</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- .header-caption -->
+                </div>
+                <!-- .col -->
+              </div>
+              <!-- .row -->
+            </div>
+            <!-- .container -->
+          </div>
+          <!-- .header-content -->
+          <div class="bg-image bg-overlay after-bg-dark after-opacity-95">
+            <!-- <img src="./images/bg/a.jpg" alt=""> -->
+            <img
+              src="https://img.inews.co.id/media/822/files/inews_new/2023/08/28/pengolahan_sampah_ugm.jpg"
+              alt=""
+            />
+          </div>
+        </header>
+        <!-- .header -->
+        <section class="section section-service pb-0" id="feature">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-xl-10 col-md-10">
+                <div class="section-head">
+                  <h2 class="title text-dark" id="__sgd_title">
+                    Temukan Kontribusi UGM terhadap SDGs
+                  </h2>
+                  <p id="__sgd_sub_title">
+                    Setiap tahun, kami melaporkan kontribusi kami terhadap SDGs
+                    global. Kami mengidentifikasi kegiatan-kegiatan di UGM yang
+                    relevan dengan SDGs PBB. Hubungan yang kuat antara
+                    kegiatan-kegiatan kami dan SDGs PBB membawa fokus dan
+                    perspektif pada tujuan-tujuan keberlanjutan kami sendiri dan
+                    membantu kami menetapkan target-target yang lebih berdampak.
+                  </p>
+                </div>
+                <!-- .section-head -->
+              </div>
+              <!-- .col -->
+            </div>
+            <!-- .row -->
+            <div class="section-content">
+              <div
+                class="row gy-gs justify-content-center text-center"
+                id="__card_sgd"
+              >
+                <!-- CARD SGD-->
+              </div>
+              <!-- .row -->
+            </div>
+          </div>
+          <!-- .container -->
+        </section>
+        <!-- .section -->
+        <section class="section section-feature pb-0">
+          <div class="container">
+            <div class="row align-items-center g-gs">
+              <div class="col-lg-6">
+                <div class="img-block img-block-s2 pe-xl-6 pe-lg-3">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/4213/4213542.png"
+                    alt=""
+                  />
+                </div>
+                <!-- .img-block -->
+              </div>
+              <!-- .col -->
+              <div class="col-lg-6">
+                <div class="text-block">
+                  <h2 class="title" id="__3r_title">
+                    3R: Solusi Sederhana untuk Masa Depan Bumi
+                  </h2>
+                  <div class="mt-4 ms-n3 ms-sm-n4">
+                    <div class="row gy-gs">
+                      <div class="col-12">
+                        <div
+                          class="card service service-inline service-s4 after-bg-danger"
+                        >
+                          <div class="card-inner">
+                            <div
+                              class="service-icon styled-icon styled-icon-s4 styled-icon-5x"
+                            >
+                              <img
+                                src="https://cdn-icons-png.flaticon.com/512/1758/1758375.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="service-text">
+                              <h5 class="title">Reuse</h5>
+                              <p id="__3r_reuse_sub_1">
+                                Manfaatkan kembali barang-barang yang masih bisa
+                                dipakai agar mengurangi sampah dan menghemat
+                                sumber daya alam.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- .card -->
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="card service service-inline service-s4 after-bg-primary"
+                        >
+                          <div class="card-inner">
+                            <div
+                              class="service-icon styled-icon styled-icon-s4 styled-icon-5x"
+                            >
+                              <img
+                                src="https://cdn-icons-png.flaticon.com/512/9789/9789382.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="service-text">
+                              <h5 class="title">Reduce</h5>
+                              <p id="__3r_reuse_sub_2">
+                                Kurangi penggunaan barang sekali pakai dan
+                                konsumsi berlebihan untuk mengurangi limbah
+                                serta menjaga lingkungan tetap bersih dan sehat.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- .card -->
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="card service service-inline service-s4 after-bg-pink"
+                        >
+                          <div class="card-inner">
+                            <div
+                              class="service-icon styled-icon styled-icon-s4 styled-icon-5x"
+                            >
+                              <img
+                                src="https://cdn-icons-png.flaticon.com/512/15676/15676246.png"
+                                alt=""
+                              />
+                            </div>
+                            <div class="service-text">
+                              <h5 class="title">Recycle</h5>
+                              <p id="__3r_reuse_sub_3">
+                                Ubah limbah menjadi produk baru yang bermanfaat!
+                                Dengan mendaur ulang, kita dapat mengurangi
+                                pencemaran lingkungan dan menghemat energi.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- .card -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- .text-block -->
+              </div>
+              <!-- .col -->
+            </div>
+            <!-- .row -->
+          </div>
+          <!-- .container -->
+        </section>
+        <!-- .section -->
+        <section class="section section-feature">
+          <div class="container">
+            <div
+              class="row flex-row-reverse align-items-center justify-content-between g-gs"
+            >
+              <div class="col-xl-6 col-lg-5">
+                <div class="img-block img-block-s2 ps-xl-6">
+                  <img
+                    src="https://ugm.ac.id/wp-content/uploads/2025/03/ICON-UGM-42-1024x683.jpg"
+                    alt="img"
+                  />
+                </div>
+                <!-- .img-block -->
+              </div>
+              <!-- .col -->
+              <div class="col-xl-6 col-lg-7">
+                <div class="text-block">
+                  <h2
+                    class="title text-dark text-center text-lg-start"
+                    id="__ugm_value_tittle"
+                  >
+                    Nilai - Nilai ke-UGM an dalam Pengelolaan Sampah
+                  </h2>
+                  <div class="row g-gs justify-content-center text-center">
+                    <div class="col-mb-6">
+                      <div class="card service service-s4">
+                        <div class="card-inner">
+                          <div
+                            class="service-icon styled-icon styled-icon-4x text-primary"
+                          >
+                            <img
+                              src="https://cdn-icons-png.flaticon.com/512/15394/15394641.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="service-text">
+                            <h5 class="title" id="__ugm_value_tittle_1">
+                              Keilmuan
+                            </h5>
+                            <p id="__ugm_value_sub_1">
+                              Penelitian dan Inovasi Ramah Lingkungan
+                            </p>
+                          </div>
+                        </div>
+                        <!-- .service -->
+                      </div>
+                      <!-- .card -->
+                    </div>
+                    <!-- .col -->
+                    <div class="col-mb-6">
+                      <div class="card service service-s4 after-bg-danger">
+                        <div class="card-inner">
+                          <div
+                            class="service-icon styled-icon styled-icon-4x text-danger"
+                          >
+                            <img
+                              src="   https://cdn-icons-png.flaticon.com/512/3081/3081597.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="service-text">
+                            <h5 class="title" id="__ugm_value_tittle_2">
+                              Kenyataan
+                            </h5>
+                            <p id="__ugm_value_sub_2">
+                              Diwujudkan dalam Aksi Nyata Pengelolaan Sampah dan
+                              Konsumsi Berkelanjutan
+                            </p>
+                          </div>
+                        </div>
+                        <!-- .service -->
+                      </div>
+                      <!-- .card -->
+                    </div>
+                    <!-- .col -->
+                    <div class="col-mb-6">
+                      <div class="card service service-s4 after-bg-pink">
+                        <div class="card-inner">
+                          <div
+                            class="service-icon styled-icon styled-icon-4x text-pink"
+                          >
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Garuda_Pancasila%2C_Coat_of_Arms_of_Indonesia.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="service-text">
+                            <h5 class="title" id="__ugm_value_tittle_3">
+                              Pancasila
+                            </h5>
+                            <p id="__ugm_value_sub_3">
+                              Tercermin dalam Kepedulian Sosial dan Gotong
+                              Royong
+                            </p>
+                          </div>
+                        </div>
+                        <!-- .service -->
+                      </div>
+                      <!-- .card -->
+                    </div>
+                    <!-- .col -->
+                    <div class="col-mb-6">
+                      <div class="card service service-s4 after-bg-purple">
+                        <div class="card-inner">
+                          <div
+                            class="service-icon styled-icon styled-icon-4x text-purple"
+                          >
+                            <img
+                              src=" https://cdn-icons-png.flaticon.com/512/8029/8029655.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="service-text">
+                            <h5 class="title" id="__ugm_value_tittle_4">
+                              Kebudayaan Indonesia Seutuhnya
+                            </h5>
+                            <p id="__ugm_value_sub_4">
+                              Dijaga Melalui Penghormatan Terhadap Alam dan Pola
+                              Hidup Berkelanjutan.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- .service -->
+                      </div>
+                      <!-- .card -->
+                    </div>
+                    <!-- .col -->
+                  </div>
+                  <!-- .row -->
+                </div>
+                <!-- .text-block -->
+              </div>
+              <!-- .col -->
+            </div>
+            <!-- .row -->
+          </div>
+          <!-- .container -->
+        </section>
+        <!-- .section -->
+
+        <style>
+          .carousel {
+            background: #eee;
+            height: 200px;
+          }
+
+          .carousel:after {
+            content: "flickity";
+            display: none; /* hide :after */
+          }
+
+          .carousel-cell {
+            width: 66%;
+            height: 360px;
+            margin-right: 10px;
+            background: #e1e1e1;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+          }
+
+          @media (max-width: 768px) {
+            .carousel-cell {
+              min-width: 95%; /* Make it take more space in smaller screens */
+            }
+            .carousel-cell .service-text {
+              display: none !important;
+            }
+
+            .card_custom.service-icon.styled-icon {
+              all: unset; /* Removes all styles */
+            }
+          }
+
+          .custom_img {
+            width: 100%;
+            max-height: 310px !important;
+          }
+
+          /* cell number */
+          .carousel-cell:before {
+            display: flex;
+            text-align: center;
+            /* content: counter(carousel-cell); */
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+          }
+        </style>
+
+        <div class="pb-6">
+          <div
+            class="carousel"
+            data-flickity='{ "wrapAround": true, "autoPlay": true, "freeScroll": true, "contain": true, "pageDots": false, "watchCSS": true }'
+          >
+            <div class="carousel-cell card_custom">
+              <div class="service-inline">
+                <div class="card-inner">
+                  <div class="img-responsive img-block">
+                    <img
+                      src="https://puskesmas-kagok.whf.bz/images/news/news-1.png"
+                      alt=""
+                      class="custom_img"
+                    />
+                  </div>
+                  <div class="service-text">
+                    <h5 class="title sub_carousel d-none">
+                      Permasalahan sampah
+                    </h5>
+                    <p
+                      class="sub_carousel"
+                      id="__3r_reuse_sub_1"
+                      style="font-size: 1.4vh; display: none"
+                    >
+                      Dalam satu tahun terakhir, Yogyakarta mengalami kondisi
+                      darurat sampah yang disebabkan oleh penutupan Tempat
+                      Pembuangan Sampah (TPS) Piyungan, yang tidak mampu
+                      menampung jumlah sampah yang semakin meningkat. Situasi
+                      ini menyebabkan kebingungan di kalangan warga Yogyakarta
+                      dalam membuang sampah, karena petugas pengangkut sampah
+                      tidak lagi melakukan pengangkutan. Akibatnya, warga
+                      terpaksa membuang sampah sembarangan di sepanjang jalan,
+                      yang mengakibatkan pencemaran lingkungan serta menimbulkan
+                      bau tidak sedap. Berdasarkan data dari katadata jumlah
+                      penduduk Yogyakarta tahun 2024 sebanyak 3.072.000 jiwa.
+                      Data dari Dinas Lingkungan Hidup Kota Yogyakarta,
+                      perkiraan produksi sampah di Yogyakarta pada tahun 2024
+                      mencapai 303,13 ton. (Sekitar 10,13 ton sampah/tahun).
+                      Jumlah sampah tersebut bisa setara 606 jumlah sapi Note:
+                      Mba andini aku minta tolong dibikinin kayak di gambar
+                      bawah ini menggunakan data di atas ya
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell card_custom">
+              <div class="service-inline">
+                <div class="card-inner">
+                  <div class="img-responsive img-block">
+                    <img
+                      src="https://puskesmas-kagok.whf.bz/images/news/news-2.png"
+                      alt=""
+                      class="custom_img"
+                    />
+                  </div>
+                  <div class="service-text">
+                    <h5 class="title d-none">
+                      Langkah yang sudah dilakukan UGM untuk meminimalisir
+                      sampah
+                    </h5>
+                    <p
+                      class="sub_carousel"
+                      id="__3r_reuse_sub_1"
+                      style="font-size: 1.4vh d-none"
+                    >
+                      <!-- <li>
+                        Membagi tempat sampah berdasarkan kategorinya (nanti
+                        minta tolong dibikin kayak gini ya mba)
+                      </li>
+                      <li>Meminimalisir penggunaan kertas (paperless)</li>
+                      <li>
+                        Mematikan lampu apabila tidak digunakan Menggunakan
+                        htumblr
+                      </li>
+                      <li>Membawatas belanja apabila sedang jajan</li>
+                      <li>
+                        Pengelolaan Sampah Daun menjadi Pupuk Organik & Biopori
+                      </li> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="service-inline">
+                <div class="card-inner">
+                  <div class="img-responsive img-block">
+                    <img
+                      src="https://puskesmas-kagok.whf.bz/images/news/news-3.png"
+                      alt=""
+                      class="custom_img"
+                    />
+                  </div>
+                  <div class="service-text">
+                    <h5 class="title d-none">
+                      Langkah yang sudah dilakukan UGM untuk meminimalisir
+                      sampah
+                    </h5>
+                    <p
+                      class="sub_carousel"
+                      id="__3r_reuse_sub_1"
+                      style="font-size: 1.4vh d-none"
+                    >
+                      <!-- <li>
+                        Membagi tempat sampah berdasarkan kategorinya (nanti
+                        minta tolong dibikin kayak gini ya mba)
+                      </li>
+                      <li>Meminimalisir penggunaan kertas (paperless)</li>
+                      <li>
+                        Mematikan lampu apabila tidak digunakan Menggunakan
+                        htumblr
+                      </li>
+                      <li>Membawatas belanja apabila sedang jajan</li>
+                      <li>
+                        Pengelolaan Sampah Daun menjadi Pupuk Organik & Biopori
+                      </li> -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-bottom: 12vh; padding-top: 14vh">
+          <section class="section section-cta is-dark" id="cta">
+            <div class="container">
+              <div class="row justify-content-center text-center">
+                <div class="col-lg-9 col-md-10">
+                  <div class="text-block is-compact py-3">
+                    <h2 class="title" id="__info_sampah_title">
+                      Mau Tau Peringkat Titik Pengambilan Sampah di UGM ?
+                    </h2>
+                    <p id="__info_sampah_sub">
+                      UGM memiliki banyak titik pengambilan sampah, apakah
+                      lokasi termasuk yang sadar akan pengolahan sampah ?
+                    </p>
+                    <ul class="btns-inline justify-center pt-2">
+                      <li>
+                        <a
+                          href="https://puskesmas-kagok.whf.bz/infografis.html"
+                          class="btn btn-xl btn-primary btn-round"
+                          id="__info_sampah_btn"
+                          >Cek Sekarang!</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- .col -->
+              </div>
+              <!-- .row -->
+            </div>
+            <!-- .container -->
+            <div class="bg-image bg-overlay after-bg-dark after-opacity-90">
+              <img
+                src="https://puskesmas-kagok.whf.bz/images/bg/b.jpg"
+                alt=""
+                style="max-height: 300px; max-width: 400px"
+              />
+            </div>
+          </section>
+          <!-- .section -->
+        </div>
+
+        <footer class="footer bg-dark is-dark">
+          <div class="container">
+            <div class="row g-gs justify-content-between py-md-6">
+              <div class="col-lg-4 col-md-6">
+                <div class="widget widget-about mt-n2">
+                  <a href="html/index.html" class="logo-link">
+                    <img
+                      class="logo-light logo-img"
+                      style="
+                        filter: brightness(100%) invert(100%) grayscale(100%);
+                      "
+                      src="https://simpan.ugm.ac.id/s/UutuDmaDOpmcmku/download?path=%2F&files=Logo%20Horizontal%20Stack-Up.png"
+                      alt="logo"
+                    />
+                    <img
+                      class="logo-dark logo-img"
+                      src="https://simpan.ugm.ac.id/s/UutuDmaDOpmcmku/download?path=%2F&files=Logo%20Horizontal%20Stack-Up.png"
+                      alt="logo-dark"
+                    />
+                  </a>
+                  <p id="__footer_disclaimer">
+                    Website ini bertujuan untuk mengedukasi pengguna tentang
+                    SGDs and cara pemilahan sampah di UGM. Serta untuk
+                    menyelesaikan tugas Latsar UGM.
+                  </p>
+                </div>
+              </div>
+              <!-- .col -->
+              <div class="col-lg-6 col-12">
+                <div class="widget">
+                  <h6 class="widget-title" id="__footer_res_title">Bahan</h6>
+                  <ul
+                    class="widget-link link-inline link-inline-2col link-inline-md-3col g-2 py-1"
+                  >
+                    <li>
+                      <a
+                        href="https://sustainabledevelopment.ugm.ac.id"
+                        id="__footer_res_1"
+                        >Sustainable Development Goals UGM</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://ugm.ac.id/wp-content/uploads/2024/11/16839_Surat-Edaran-Rektor-tentang-Sustainable-Lifestyle_signed.pdf"
+                        id="__footer_res_2"
+                        >Praktek Baik Kehidupan yang Berkelanjutan di Lingkungan
+                        UGM</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://ft.ugm.ac.id/download/surat-edaran-rektor-ugm-9034-un1-p-ot-01-03-2024-tentang-kewajiban-pengelolaan-sampah-di-lingkungan-ugm/"
+                        id="__footer_res_3"
+                        >Kewajiban Pengelolaan Sampah di Lingkungan UGM</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- .col -->
+            </div>
+            <!-- .row -->
+            <hr class="hr border-light mb-0 mt-n1" />
+            <div
+              class="row g-3 align-items-center justify-content-md-between py-4"
+            >
+              <div class="col-md-8">
+                <div>
+                  <span id="__footer_est"
+                    >Est &copy; 2025 Latsar Kelompok 1. Template oleh</span
+                  >
+                  <a class="text-base fw-bold" href="#">Softnio</a>
+                </div>
+              </div>
+              <!-- .col -->
+              <div class="col-md-4 d-flex justify-content-md-end">
+                <!-- <ul class="social">
+                                <li><a href="#"><em class="icon ni ni-twitter"></em></a></li>
+                                <li><a href="#"><em class="icon ni ni-facebook-f"></em></a></li>
+                                <li><a href="#"><em class="icon ni ni-instagram"></em></a></li>
+                                <li><a href="#"><em class="icon ni ni-pinterest"></em></a></li>
+                            </ul> -->
+                <!-- .footer-icon -->
+              </div>
+              <!-- .col -->
+            </div>
+            <!-- .row -->
+          </div>
+          <!-- .container -->
+        </footer>
+        <!-- .footer -->
+      </div>
+      <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- JavaScript -->
+
+    <!-- Tombol Chat -->
+    <div
+      class="button-wa-fixed"
+      style="bottom: 140px"
+      data-text="Take a Survey"
+    >
+      <a href="https://ugm.id/surveilatsarsatu">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3273/3273583.png"
+          alt="Survey"
+          style="width: 64px; height: 64px"
+        />
+      </a>
+    </div>
+
+    <div
+      class="button-wa-fixed"
+      style="z-index: 101"
+      id="chatbotButton"
+      data-text="Chat With Us"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/11306/11306137.png"
+        alt="Survey"
+      />
+    </div>
+
+    <!-- Popup Chatbot -->
+    <div id="chatModal" class="chat-modal">
+      <span class="close-chat" onclick="closeChat()">×</span>
+      <iframe
+        src="https://copilotstudio.microsoft.com/environments/Default-af2c0734-cb42-464f-b6bf-2a241b6ada56/bots/cr319_pengelolaanSampahSustainableLifestyle/webchat?__version__=2"
+      ></iframe>
+    </div>
+  </body>
+</html>

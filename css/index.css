@@ -1,0 +1,186 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switch>span {
+  position: absolute;
+  top: 8px;
+  pointer-events: none;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked~.off {
+  color: #374e78;
+}
+
+input.check-toggle-round-flat:checked~.on {
+  color: #fff;
+}
+
+.switch>span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #374e78;
+}
+
+.switch>span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+.check-toggle+label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat+label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: #374e78;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat+label:before,
+input.check-toggle-round-flat+label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat+label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #374e78;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+
+input.check-toggle-round-flat+label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: #fff;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+/* input.check-toggle-round-flat:checked + label {
+  } */
+
+input.check-toggle-round-flat:checked+label:after {
+  margin-left: 44px;
+}
+
+
+.button-wa-fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  width: 72px;
+  height: 72px;
+  border-radius: 60%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-wa-fixed:hover {
+  transform: scale(1.2);
+}
+
+.button-wa-fixed::before {
+  content: attr(data-text);
+  /* Fetch content from data attribute */
+  position: absolute;
+  top: -40px;
+  /* Adjust the distance from the button */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #26a1da;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: block;
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.button-wa-fixed:hover::before {
+  opacity: 1;
+}
+
+.chat-modal {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  width: calc(100% - 28vw);
+  height: 60vh;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+  overflow: hidden;
+}
+
+.chat-modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Tombol Close */
+.close-chat {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
