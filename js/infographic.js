@@ -192,7 +192,7 @@ function generateBin() {
     </a>
     `;
 
-    let concatBIN = `<img id="map" src="https://puskesmas-kagok.whf.bz/images/peta-ugm.jpg" alt="">`;
+    let concatBIN = `<img id="map" src="https://sastrogumilo.github.io/images/peta-ugm.jpg" alt="">`;
 
     binMap.forEach(bin => {
         concatBIN += templateBin.replace("{{id}}", bin.id).replace("{{name}}", bin.name);
